@@ -13,7 +13,7 @@ class ComputeInvoiceTest {
     void givenRetailCustomerWhenComputeCustomerInvoiceForElectricityThenReturnCorrectAmount() {
        // Given
         final var customerReference = new CustomerReference("EKW111111111");
-        final var customer = new RetailCustomer(customerReference, Civility.MADAME, "John", "Doe");
+        final var customer = new RetailCustomer(customerReference, Civility.MADAME, "Jane", "Doe");
         final var energyConsumption = new EnergyConsumption(EnergyType.ELECTRICITY, 1000);
 
        // When
@@ -27,7 +27,7 @@ class ComputeInvoiceTest {
     void givenRetailCustomerWhenComputeCustomerInvoiceForGasThenReturnCorrectAmount() {
         // Given
         final var customerReference = new CustomerReference("EKW111111111");
-        final var customer = new RetailCustomer(customerReference, Civility.MADAME, "John", "Doe");
+        final var customer = new RetailCustomer(customerReference, Civility.MADAME, "Jane", "Doe");
         final var energyConsumption = new EnergyConsumption(EnergyType.GAS, 1000);
 
         // When
