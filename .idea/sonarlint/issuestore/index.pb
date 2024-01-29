@@ -56,3 +56,5 @@ Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140
 Q.idea/sonarlint/securityhotspotstore/b/e/be2b79c5038e2ce00e6d02b88cbb2cd7020806a2,2/f/2f9dc1ffcfe60310801b367b29c9ee776a6291fc
 w
 G.idea/sonarlint/issuestore/b/e/be2b79c5038e2ce00e6d02b88cbb2cd7020806a2,2/e/2ec8fa42b5bce81dd546b35ce8094d47f5797dbd
+Z
+*src/main/java/com/capri/invoice/Price.java,1/1/112dbd094eb72dbd54c71fa0fc61e22cbbe6d966

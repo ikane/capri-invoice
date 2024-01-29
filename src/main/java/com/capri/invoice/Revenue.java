@@ -8,6 +8,6 @@ public record Revenue(long value) {
     }
 
     public boolean moreThanOneMillion() {
-        return value >= 1_000_000;
+        return value >= 1_000_000; //To be confirmed with PO...
     }
 }

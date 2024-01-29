@@ -20,7 +20,7 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
        // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(133), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(133), withinPercentage(0.01));
     }
 
     @Test
@@ -34,7 +34,7 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
         // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(108), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(108), withinPercentage(0.01));
     }
 
     @Test
@@ -49,7 +49,7 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
         // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(110), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(110), withinPercentage(0.01));
     }
 
     @Test
@@ -64,7 +64,7 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
         // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(123), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(123), withinPercentage(0.01));
     }
 
     @Test
@@ -79,7 +79,7 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
         // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(112), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(112), withinPercentage(0.01));
     }
 
     @Test
@@ -94,6 +94,6 @@ class ComputeInvoiceTest {
         final var result = computeInvoice.computeCustomerInvoice(customer, energyConsumption);
 
         // Then
-        assertThat(result).isCloseTo(BigDecimal.valueOf(117), withinPercentage(0.01));
+        assertThat(result.amount()).isCloseTo(BigDecimal.valueOf(117), withinPercentage(0.01));
     }
 }
